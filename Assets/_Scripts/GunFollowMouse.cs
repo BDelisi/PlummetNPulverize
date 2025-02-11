@@ -19,7 +19,7 @@ public class GunFollowMouse : MonoBehaviour
     {
         Vector3 mousePos = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
         float angleRad = Mathf.Atan2(mousePos.y - Player.transform.position.y, mousePos.x - Player.transform.position.x);
-        float angleDeg = (180 / Mathf.PI) * angleRad; // Offset this by 90 Degrees
+        float angleDeg = (180 / Mathf.PI) * angleRad;
 
         transform.rotation = Quaternion.Euler(0f, 0f, angleDeg);
 

@@ -11,6 +11,8 @@ public class Firing : MonoBehaviour
     public int ammoLeft = 3;
     public float firerate = .25f;
     public float recoil = 4f;
+    public int amount = 5;
+    public float spread;
     public KeyCode shoot;
     public GameObject particles;
 
@@ -45,8 +47,10 @@ public class Firing : MonoBehaviour
                 ammoLeft--;
                 player.GetComponent<Rigidbody2D>().velocity += new Vector2(math.cos(transform.rotation.eulerAngles.z * Mathf.Deg2Rad) * -1, math.sin(transform.rotation.eulerAngles.z * Mathf.Deg2Rad) * -2f) * recoil;
                 shotgunSound.Play();
-                GameObject temp = Instantiate(particles, transform.position, Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z - 90f));
-                Destroy(temp, .5f);
+                for (int i = 0; i < amount; i++)
+                {
+                    GameObject temp = Instantiate(particles, transform.position, transform.rotation * quaternion.Euler(0, 0, UnityEngine.Random.Range(spread * -1, spread)));
+                }
             }
         }
     }

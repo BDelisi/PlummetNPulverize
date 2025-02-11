@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Bullets
+  - Shotgun
+  - Background
+  - Spikes
   layers:
   - Default
   - TransparentFX
