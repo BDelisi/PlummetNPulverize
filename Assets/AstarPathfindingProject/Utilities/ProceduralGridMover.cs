@@ -254,8 +254,9 @@ namespace Pathfinding {
 						// Calculate the limits for the region that has been wrapped
 						// to the other side of the graph
 						int xmin, xmax;
-						if (z >= recalculateRect.ymin && z < recalculateRect.ymax) {
-							xmin = 0;
+                        if (z >= recalculateRect.ymin && z < recalculateRect.ymax - 1)
+                        {
+                            xmin = 0;
 							xmax = depth;
 						} else {
 							xmin = recalculateRect.xmin;

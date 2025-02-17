@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8148712731243527842}
   m_Layer: 0
   m_Name: NextLevelSpawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 28.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -93,3 +93,8 @@ MonoBehaviour:
   levels:
   - {fileID: 1986274706283932387, guid: 863c3d9c424329140aa89c0260e50945, type: 3}
   - {fileID: 5212085636396841661, guid: 203d9e57a9695834fa555edee48da15b, type: 3}
+  - {fileID: 5212085636396841661, guid: 619924b8f2696f1429b262a5fb4dacf3, type: 3}
+  - {fileID: 5212085636396841661, guid: 481d18c50d137834fb51d6f4fa5b92ca, type: 3}
+  - {fileID: 5212085636396841661, guid: 4d6cd33fba4f5fd4f98047f4f1ae433c, type: 3}
+  - {fileID: 5212085636396841661, guid: a4b13a8f9baadac4c9b66ce4a7a0a3f3, type: 3}
+  - {fileID: 5212085636396841661, guid: 8ba0799d3f1ea3c4d93ebdadaa06ee63, type: 3}

@@ -9,10 +9,12 @@ public class Enemy : MonoBehaviour
     public int health = 5;
 
     private GameObject player;
+    private GameObject gameManager;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
         GetComponent<AIDestinationSetter>().target = player.transform;
     }
 
@@ -21,6 +23,7 @@ public class Enemy : MonoBehaviour
         health--;
         if (health <= 0 )
         {
+            gameManager.GetComponent<PauseGame>().playDeath();
             Destroy(gameObject);
         }
     }

@@ -31,6 +31,7 @@
 3. **Any assets used that you didn't create yourself?** <br> (art, music, etc. Just tell us where you got it, link it here)
 https://opengameart.org/content/legend-of-fangury-characters-and-tileset-8x8
 https://opengameart.org/content/tiny-gun-icons-16x16
+https://opengameart.org/content/game-game
 
 
 <br>

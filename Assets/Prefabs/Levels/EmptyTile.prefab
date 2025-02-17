@@ -4707,25 +4707,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2897585554317202989}
     m_Modifications:
-    - target: {fileID: -8148712731243527842, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
-      propertyPath: levels.Array.data[0]
-      value: 
-      objectReference: {fileID: 1986274706283932387, guid: 863c3d9c424329140aa89c0260e50945, type: 3}
-    - target: {fileID: -8148712731243527842, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
-      propertyPath: levels.Array.data[1]
-      value: 
-      objectReference: {fileID: 5212085636396841661}
     - target: {fileID: 3667758156388052250, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
       propertyPath: m_Name
       value: NextLevelSpawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 5672964160706014184, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5672964160706014184, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
-      propertyPath: m_Offset.y
-      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 8097481814352461615, guid: 4470eeadd4fa7c04e9b001694bee719a, type: 3}
       propertyPath: m_LocalPosition.x

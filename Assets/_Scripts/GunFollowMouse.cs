@@ -17,22 +17,26 @@ public class GunFollowMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
-        float angleRad = Mathf.Atan2(mousePos.y - Player.transform.position.y, mousePos.x - Player.transform.position.x);
-        float angleDeg = (180 / Mathf.PI) * angleRad;
-
-        transform.rotation = Quaternion.Euler(0f, 0f, angleDeg);
-
-        transform.position = Player.transform.position + transform.rotation * new Vector3(.70f, 0, 0f);
-        //Debug.Log(transform.rotation.z);
-        if (Math.Abs(transform.rotation.z) > .7f )
+        if (Time.timeScale > 0)
         {
-            Player.GetComponent<SpriteRenderer>().flipX = false;
-            GetComponent<SpriteRenderer>().flipY = true;
-        } else
-        {
-            Player.GetComponent<SpriteRenderer>().flipX = true;
-            GetComponent<SpriteRenderer>().flipY = false;
+            Vector3 mousePos = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
+            float angleRad = Mathf.Atan2(mousePos.y - Player.transform.position.y, mousePos.x - Player.transform.position.x);
+            float angleDeg = (180 / Mathf.PI) * angleRad;
+
+            transform.rotation = Quaternion.Euler(0f, 0f, angleDeg);
+
+            transform.position = Player.transform.position + transform.rotation * new Vector3(.70f, 0, 0f);
+            //Debug.Log(transform.rotation.z);
+            if (Math.Abs(transform.rotation.z) > .7f)
+            {
+                Player.GetComponent<SpriteRenderer>().flipX = false;
+                GetComponent<SpriteRenderer>().flipY = true;
+            }
+            else
+            {
+                Player.GetComponent<SpriteRenderer>().flipX = true;
+                GetComponent<SpriteRenderer>().flipY = false;
+            }
         }
     }
 }

@@ -27,7 +27,7 @@ public class Bullets : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Shotgun") && !collision.CompareTag("Background") && !collision.CompareTag("Bullets"))
+        if (!collision.CompareTag("Shotgun") && !collision.CompareTag("Background") && !collision.CompareTag("Bullets") && !collision.CompareTag("Player") && !collision.CompareTag("Spawner"))
         {
             Destroy(gameObject);
         }

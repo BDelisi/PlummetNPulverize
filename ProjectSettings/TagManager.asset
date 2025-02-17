@@ -9,6 +9,10 @@ TagManager:
   - Shotgun
   - Background
   - Spikes
+  - Pathfinder
+  - HealthUp
+  - Spawner
+  - GameManager
   layers:
   - Default
   - TransparentFX

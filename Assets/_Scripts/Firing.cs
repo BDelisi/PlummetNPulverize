@@ -41,7 +41,7 @@ public class Firing : MonoBehaviour
 
         if (Input.GetKeyDown(shoot) || Input.GetMouseButtonDown(0))
         {
-            if (cd == 0 && ammoLeft > 0)
+            if (cd == 0 && ammoLeft > 0 && Time.timeScale > 0)
             {
                 cd = firerate;
                 ammoLeft--;
