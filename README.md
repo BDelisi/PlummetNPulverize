@@ -17,33 +17,33 @@
 <br>
 
 1. **What are the controls to your game? How do we play?**
-
+The game is controlled by aiming with the mouse pointer and clicking or pressing space to shoot
 
 
 <br>
 
 2. **What creative additions did you make? How can we find them?**
-
+A creative addition I added was the level designs
 
 
 <br>
 
 3. **Any assets used that you didn't create yourself?** <br> (art, music, etc. Just tell us where you got it, link it here)
-https://opengameart.org/content/legend-of-fangury-characters-and-tileset-8x8
-https://opengameart.org/content/tiny-gun-icons-16x16
-https://opengameart.org/content/game-game
+tileset: https://opengameart.org/content/legend-of-fangury-characters-and-tileset-8x8
+the gun: https://opengameart.org/content/tiny-gun-icons-16x16
+The music: https://opengameart.org/content/game-game
 
 
 <br>
 
 4. **Did you receive help from anyone outside this class?** <br> (list their names and what they helped with)
-
+I received a bit of help from my friend Marty who helped me figure out what to do when I got stuck with A* not wanting to coperate
 
 
 <br>
 
 5. **Did you get help from any AI Code Assistants?** <br> (Tell us which .cs file to look in for the citation and describe what you learned)
-
+No I did not
 
 
 <br>
@@ -55,13 +55,13 @@ https://www.youtube.com/watch?v=jvtFUfJ6CP8
 <br>
 
 7. **What trouble did you have with this project?**
-
+A* was not cooperating for the longest time and I kept running into issues one after another until I finally figured it all out after at least 5 hours of struggling
 
 
 <br>
 
 8. **Is there anything else we should know?**
-
+That A* is annoying and there needs to be more posts online about people trying to solve issues with it
 
 
 
